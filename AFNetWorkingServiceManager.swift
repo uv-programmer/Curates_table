@@ -15,7 +15,7 @@ class AFNetWorkingServiceManager: NSObject {
     let manager                     = AFHTTPSessionManager()
     
 
-      static var baseUrl : String     =  "http://dronaai.iinerds.com:3300/api/" // LOCAL
+      static var baseUrl : String     =  "http://127.0.0.1:3300/api/" // LOCAL
     
 
     
@@ -32,7 +32,7 @@ class AFNetWorkingServiceManager: NSObject {
     }
     
     func initWithManager() -> String {
-        let url : NSURL = NSURL(string: "http://dronaai.iinerds.com:3300/api/")! //LOCAL
+        let url : NSURL = NSURL(string: "http://127.0.0.1:3300/api/")! //LOCAL
         
         let urlString : String = url.absoluteString!
         return urlString
